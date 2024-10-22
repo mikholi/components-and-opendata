@@ -20,7 +20,11 @@ function OrderForm() {
     };
     
     const decreaseAmount = () => {
-        setAmount(prevAmount => prevAmount - 1);
+        if (amount > 1) {
+            setAmount(prevAmount => prevAmount -1);
+        } else {
+            setAmount(0);
+        }
     }
 
     return (
@@ -39,9 +43,9 @@ function OrderForm() {
         </select>
         <p>Quantity:</p>
         <div>
-            <button onClick={increaseAmount}>+</button>
-            <span style={{ margin: '0 10px' }}>{amount}</span>
             <button onClick={decreaseAmount}>-</button>
+            <span style={{ margin: '0 10px' }}>{amount}</span>
+            <button onClick={increaseAmount}>+</button>
         </div>
     </div>
     )
