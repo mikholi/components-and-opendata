@@ -14,3 +14,9 @@
   border-radius: 20%;
   border-style: double;
 }
+
+p {
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
