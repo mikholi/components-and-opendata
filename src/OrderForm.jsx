@@ -9,9 +9,9 @@ import { useState } from "react"
 
 function OrderForm() {
 
-    const products = ['Iphone 11', 'Iphone 12', 'Iphone 13', 'Iphone 14', 'Iphone 15', 'Iphone 16']
+    const products = ['Iphone 11 (399€)', 'Iphone 12(499€)', 'Iphone 13(599€)', 'Iphone 14(699€)', 'Iphone 15(799€)', 'Iphone 16(899€)']
 
-    const prices = ['399', '499', '599', '699', '799', '899', '999']
+    const prices = ['399', '499', '599', '699', '799', '899', '999'] //tää kesken
     
     const [amount, setAmount] = useState(1);
     
@@ -32,21 +32,19 @@ function OrderForm() {
             <p></p>
         <p><b>Select product</b></p>
         <p></p>
-        <p>Product: </p>
-        <select>
+        <p>Product: <select>
             <option value="">--Select product --</option>
             {products.map((product, index)=> (
                 <option key={index} value={product}>
                     {product}
                 </option>
             ))}
-        </select>
-        <p>Quantity:</p>
-        <div>
-            <button onClick={decreaseAmount}>-</button>
+        </select> </p>
+        
+        <p>Quantity: <button onClick={decreaseAmount}>-</button>
             <span style={{ margin: '0 10px' }}>{amount}</span>
-            <button onClick={increaseAmount}>+</button>
-        </div>
+            <button onClick={increaseAmount}>+</button></p>
+        
     </div>
     )
     
