@@ -4,11 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './ComponentUI'
 import OrderForm from './OrderForm'
+import OrderInfo from './OrderInfo'
 
 
 function App() {
   return (
-    <><Header /><OrderForm /></>
+    <>
+    <Header />
+    <OrderForm />
+    <OrderInfo />
+    </>
   )
 }
 
