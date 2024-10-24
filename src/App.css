@@ -4,6 +4,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 100px;
   text-decoration: underline;
+  background-color: slategray;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  border-style: double;
 }
 
 .header-image {
@@ -21,8 +25,42 @@ p {
   
 }
 
+.order-form {
+  position: flex;
+  margin: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
 
 .order-summary {
   position: flex;
   margin-left: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.order-summary th,
+.order-summary td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-summary td {
+  padding-left: 20px;
 }

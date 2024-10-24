@@ -5,9 +5,9 @@ function OrderForm() {
 
     const products = ['Iphone 11 (399€)', 'Iphone 12 (499€)', 'Iphone 13 (599€)', 'Iphone 14 (699€)', 'Iphone 15 (799€)', 'Iphone 16 (899€)'];
 
-    const prices = [399, 499, 599, 699, 799, 899]; // Now using numbers instead of strings for prices
+    const prices = [399, 499, 599, 699, 799, 899];
 
-    const [amount, setAmount] = useState(1);
+    const [amount, setAmount] = useState(0);
     const [productIndex, setProductIndex] = useState(null);
     
     const increaseAmount = () => {
