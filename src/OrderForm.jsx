@@ -11,9 +11,10 @@ function OrderForm() {
 
     const products = ['Iphone 11 (399€)', 'Iphone 12(499€)', 'Iphone 13(599€)', 'Iphone 14(699€)', 'Iphone 15(799€)', 'Iphone 16(899€)']
 
-    const prices = ['399', '499', '599', '699', '799', '899', '999'] //tää kesken
+    const prices = ['399', '499', '599', '699', '799', '899'] //tää kesken
     
     const [amount, setAmount] = useState(1);
+    const [productIndex, setProductIndex] = useState(null);
     
     const increaseAmount = () => {
         setAmount(prevAmount => prevAmount + 1);
@@ -25,6 +26,11 @@ function OrderForm() {
         } else {
             setAmount(0);
         }
+    
+    const ProductSelection = (event) => {
+        const index = event.target.value;
+        setProductIndex(index);
+    }
     }
 
     return (
@@ -35,7 +41,7 @@ function OrderForm() {
         <p>Product: <select>
             <option value="">--Select product --</option>
             {products.map((product, index)=> (
-                <option key={index} value={product}>
+                <option key={index} value={index}>
                     {product}
                 </option>
             ))}
