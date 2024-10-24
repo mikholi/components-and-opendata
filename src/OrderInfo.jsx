@@ -1,22 +1,25 @@
-
-
-function OrderInfo() {
-    return(
-        <div className="order-table">
+function OrderInfo({ product, quantity, totalPrice }) {
+    return (
+        <div className="order-summary">
+            <b>Order info</b>
             <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>TOTAL</th>
-                </tr>
-                <tr>
-                    <td>Tähän product name</td>
-                    <td>Tähän hinta</td>
-                    <td>Tähän total price</td>
-                </tr>
+                <thead>
+                    <tr> 
+                        <th><b>Product</b></th>
+                        <th><b>Quantity</b></th>
+                        <th><b>Total</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{product}</td>
+                        <td>{quantity}</td>
+                        <td>{totalPrice}€</td> 
+                    </tr>
+                </tbody>
             </table>
         </div>
-    )
+    );
 }
 
-export default OrderInfo
+export default OrderInfo;

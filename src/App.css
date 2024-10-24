@@ -20,3 +20,9 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
+
+
+.order-summary {
+  position: flex;
+  margin-left: 100px;
+}
