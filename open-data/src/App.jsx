@@ -1,6 +1,8 @@
 // src/BreweryList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import beerimage from './beerimage.jpg'
+
 
 const BreweryList = () => {
   const [breweries, setBreweries] = useState([]);
@@ -21,7 +23,10 @@ const BreweryList = () => {
   }, [search]);
 
   return (
-    <div>
+    <div className='beer-search'>
+      <header className='Header'>
+        <h1>Search for beweries!</h1>
+      </header>
       <input
         type="text"
         placeholder="Search breweries..."
@@ -35,6 +40,7 @@ const BreweryList = () => {
           </li>
         ))}
       </ul>
+      <img className='beer-image' src={beerimage} alt='beer'></img>
     </div>
   );
 };
