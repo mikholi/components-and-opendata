@@ -1,7 +1,9 @@
 // src/BreweryList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import beerimage from './beerimage.jpg'
+import beerimage from './beerimage.jpg';
+import './App.css';
+
 
 
 const BreweryList = () => {

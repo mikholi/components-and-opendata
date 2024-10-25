@@ -1,0 +1,21 @@
+body {
+  background-color: cornsilk;
+}
+
+.beer-search {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.beer-image {
+  width: 250px;
+  height: auto;
+  margin-left: 300px;
+  border-radius: 25px;
+}
+
+header {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  text-align: center;
+}
