@@ -13,10 +13,32 @@ useEffect(() => {
   })
   .catch(error => {
     console.error('Cannot load data', error);
-  }),
+  });
 }, [])
+
+const filteredBreweries = breweries.filter(brewery =>
+  brewery.name.toLowerCase().includes(search.toLocaleLowerCase())
+);
+
+return (
+  <div>
+    <input
+    type="text"
+    placeholder='Search for breweries..'
+    value={search}
+    onChange={e => setSearch(e.target.value)}
+    />
+    <ul>
+      {filteredBreweries.map(brewery => (
+        <li key={brewery.id}>
+          {brewery.name} - {brewery.city}, {brewery.state}
+        </li>
+      ))}
+    </ul>
+  </div>
+)
 
 }
 
 
-export default App;
+export default BreweryList;
