@@ -27,7 +27,7 @@ const BreweryList = () => {
   return (
     <div className='beer-search'>
       <header className='Header'>
-        <h1>Search for beweries!</h1>
+        <h1>SEARCH FOR BREWERIES</h1>
       </header>
       <input
         type="text"
@@ -42,7 +42,6 @@ const BreweryList = () => {
           </li>
         ))}
       </ul>
-      <img className='beer-image' src={beerimage} alt='beer'></img>
     </div>
   );
 };
