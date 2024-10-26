@@ -8,3 +8,7 @@ in my github-page. Checking console, it says
 something about "404-error". I tried to google
 it and getting some resolve but nothing
 worked. 
+
+Url for the webpage is:
+https://mikholi.github.io/components-and-opendata/
+
