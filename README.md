@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<b>Components and open-data assgiment.</b>
 
-Currently, two official plugins are available:
+I couldn't publish the webpage properly. I watched and 
+read many different tutorials from the web, 
+but all could have to just a blank screen
+in my github-page. Checking console, it says 
+something about "404-error". I tried to google
+it and getting some resolve but nothing
+worked. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Url for the webpage is:
+https://mikholi.github.io/components-and-opendata/
+
