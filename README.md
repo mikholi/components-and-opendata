@@ -1,5 +1,5 @@
 
-Components and open-data assgiment.
+<b>Components and open-data assgiment.</b>
 
 I couldn't publish the webpage properly. I watched and 
 read many different tutorials from the web, 
