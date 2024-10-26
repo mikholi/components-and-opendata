@@ -1,14 +1,12 @@
 
-<b>Components and open-data assgiment.</b>
+<b>Components and open-data assigment.</b>
 
-I couldn't publish the webpage properly. I watched and 
-read many different tutorials from the web, 
-but all could have to just a blank screen
-in my github-page. Checking console, it says 
-something about "404-error". I tried to google
-it and getting some resolve but nothing
-worked. 
+Here is the URL for the component-assigment:
 
-Url for the webpage is:
-https://mikholi.github.io/components-and-opendata/
+https://components-and-opendata.vercel.app/
+
+I tried to publish it to Github pages but I couldn't get it to work. I watched tens of different videos from Youtube and read arctiles,
+but all I had there was a blank screen and in the console it said some 404-error. I then tried Vercel for publishing and it worked. 
+
+
 
