@@ -9,10 +9,9 @@ import OrderInfo from './OrderInfo'
 
 function App() {
   return (
-    <>
-    <Header />
-    <OrderForm />
-    </>
+    <div>
+      testing
+    </div>
   )
 }
 
